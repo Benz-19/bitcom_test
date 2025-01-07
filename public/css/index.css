@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ent {
+    margin-top: 500px;
+}
+
+#cont {
+    margin: 90px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    margin: 50px 20px;
+    padding: 50px 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+}
+
+
+.card .btn {
+    margin-top: 40px;
+    width: 90px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 9px;
+}
+
+.card .btn:hover {
+    background-color: aqua;
+    border: 1px solid aqua;
+}
+
+.card .btn a {
+    text-decoration: none;
+    color: black;
+}
