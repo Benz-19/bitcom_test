@@ -1,0 +1,11 @@
+{
+    "name": "hp/bitcom_test",
+    "type": "project",
+    "autoload": {
+        "classmap": [
+            "src/classes/"
+        ]
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}

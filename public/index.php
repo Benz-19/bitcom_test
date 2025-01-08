@@ -14,14 +14,14 @@
 </body>
 <div class="ent">
     <section id="cont">
-        <form action="../private/validate/validate.php" method="post">
+        <form action="../src/validate/validate.php" method="post">
             <article class="card">
                 <p>Question 1</p>
-                <button type="submit" name="submitA" class="btn"><a href="../private/viewPolls.php">View</a></button>
+                <button type="submit" name="submitA" class="btn">View</button>
             </article>
             <article class="card">
                 <p>Question 2</p>
-                <button type="submit" name="submitB" class="btn"><a href="../private/viewPolls.php">View</a></button>
+                <button type="submit" name="submitB" class="btn">View</button>
             </article>
         </form>
     </section>
