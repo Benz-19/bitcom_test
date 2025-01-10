@@ -1,9 +1,7 @@
 <?php
 
-use Hp\BitcomTest\Database;
-
 require_once __DIR__ . "/../../vendor/autoload.php";
-
+include "database.class.php";
 
 class PollingUnit extends Database
 {
@@ -25,10 +23,10 @@ class PollingUnit extends Database
         return $this->idArr;
     }
 
-    public function dsiplayIdArr()
+    public function displayIdArr()
     {
         $arrayId = $this->idArr;
-        foreach ($arrayId as $key => $val) {
+        foreach ($arrayId as $val) {
             foreach ($val as $id) {
                 echo $id . "<br>";
             }
@@ -39,8 +37,8 @@ class PollingUnit extends Database
 $poll = new PollingUnit;
 
 $pollId = $poll->getUniqueId();
-$poll->dsiplayIdArr();
+$poll->displayIdArr();
 
-// echo "<pre>";
-// print_r($poll->getUniqueId());
-// echo "</pre>";
+echo "<pre>";
+print_r($poll->getUniqueId());
+echo "</pre>";

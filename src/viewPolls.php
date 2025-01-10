@@ -1,12 +1,17 @@
 <?php
 
-use Hp\BitcomTest\Database;
 
-require "../vendor/autoload.php";
+// require __DIR__ . '/includes/autoloader.php';
 
 
-$db  = new Database();
+include "classes/announcedPollResult.class.php";
+// include "classes/pollingUnit.class.php";
 
-if ($db->Connection()) {
-    echo "yes";
-}
+
+$announcedPollResult = new AnnouncedPollResult;
+// // $announcedPollResult->setPollingArr([['uniqueid' => 1]]);
+// $announcedPollResult->DBAnnouncedPollResult();
+// $id = new PollingUnit;
+// $id->displayIdArr();
+// $announcedPollResult->setPollingArr($id->getIdArr());
+// $announcedPollResult->displayPollingReultIdArr();
